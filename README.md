@@ -5,4 +5,5 @@
 4. Primary handles direct request from client, and forward put() request to backup.
 5. If a new backup is promoted from idle server, primary should forward complete key-value state to backup.
 6. Clients keep trying put() and get() requests until success.
-7. Both view server and primary backup servers should handle network partition and server crash.
+7. Both view server and primary backup servers handle network partition and server crash.
+8. The system can be scalled up to handle n - 1 faults.
